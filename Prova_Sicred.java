@@ -156,4 +156,12 @@ private WebDriver navegador;
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div[2]/div/div/div/div[2]/form/div[15]/div[2]/p")));
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div[2]/div/div/div/div[2]/form/div[15]/div[2]/p")));
 
+
+    }
+
+        @After
+        public void tearDown() throws Exception {
+            navegador.quit();
+        }
+
 }
